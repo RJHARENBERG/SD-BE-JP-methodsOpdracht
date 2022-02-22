@@ -10,6 +10,12 @@ public class MediorTwo {
 
     public static void main(String[] args) {
 
+        boolean leftijd = isOldEnough(12);
+        printProceed(leftijd);
+        printUnderAgeWarning(leftijd);
+
+
+
     }
 
     public  static boolean isOldEnough(int age) {
@@ -20,11 +26,16 @@ public class MediorTwo {
         }
     }
 
-    public static void printUnderAgeWarning() {
-        System.out.println("You are not old enough for this activity!");
+    public static void printUnderAgeWarning(boolean leeftijd) {
+        if (leeftijd = false) {
+            System.out.println("You are not old enough for this activity!");
+        }
     }
 
-    public static void printProceed() {
-        System.out.println("No warning!");
+    public static void printProceed(boolean leeftijd) {
+        if (leeftijd = true){
+            System.out.println("No warning!");
+        }
+
     }
 }
