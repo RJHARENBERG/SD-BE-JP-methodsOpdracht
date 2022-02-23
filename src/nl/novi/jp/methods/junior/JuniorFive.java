@@ -10,4 +10,12 @@ package nl.novi.jp.methods.junior;
  */
 
 public class JuniorFive {
+
+    public static void main(String[] args) {
+        hoofdleters("hoi");
+    }
+
+    public static void hoofdleters(String woord){
+        System.out.println(woord.toUpperCase());
+    }
 }

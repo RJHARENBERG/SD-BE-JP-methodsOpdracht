@@ -15,7 +15,6 @@ import java.util.*;
 
 public class SeniorOne {
 
-
     public static void main(String[] args) {
 
         List<String> curstomerNames = new ArrayList<>();

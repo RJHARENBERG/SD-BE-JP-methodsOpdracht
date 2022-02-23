@@ -16,6 +16,8 @@ public class BeginnerTwo {
 
     public static void printFact() {
         System.out.println("Alle access modifiers zetten we voor het gemak op public");
+
+        printAnotherFact();
     }
 
     public static void printAnotherFact() {

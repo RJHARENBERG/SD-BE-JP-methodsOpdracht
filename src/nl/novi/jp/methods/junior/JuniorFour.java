@@ -15,12 +15,17 @@ package nl.novi.jp.methods.junior;
 
 public class JuniorFour {
     public static void main(String[] args) {
-        //doTransaction(1000, -200);
-        //doTransaction(123, 3445);
+        doTransaction(1000, -200);
+        doTransaction(123, 3445);
     }
 
-    public static void doTransaction() {
+    public static void doTransaction(int banksaldo, int transactie) {
 
+        if (transactie < 0) {
+            withdraw(banksaldo, transactie);
+        } else{
+            deposit(banksaldo, transactie);
+        }
     }
 
     public static void deposit(int bankAccountBalance, int amount) {
@@ -37,5 +42,4 @@ public class JuniorFour {
         System.out.println("The user withdraws " + amount + " euro.");
         System.out.println("The new balance is: " + updatedBalance);
     }
-
 }

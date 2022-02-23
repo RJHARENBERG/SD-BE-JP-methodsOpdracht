@@ -25,15 +25,10 @@ public class MediorFour {
     public static void main(String[] args) {
 
         List<Integer> result = numberStringToArrayList("123123145");
-
-
         List<String> textNummers = numberListToStringList(result);
 //        System.out.println(textNummers);
-
         printNumbers(textNummers);
-
     }
-
 
     //4.Pas numberListToStringList() zo aan dat de getallen uit de list worden omgezet naar text en worden toegevoegd aan: wordNumbers
     //1.Een methode die string per character in een List stopt (numberStringToArrayList).
@@ -90,20 +85,12 @@ public class MediorFour {
     //TODO Maak deze methode af.
     public static void printNumbers(List<String> worden) {
 
-        for( int i = 0; i < worden.size(); i++){
-            if(i == worden.size() -1){
+        for (int i = 0; i < worden.size(); i++) {
+            if (i == worden.size() - 1) {
                 System.out.print(worden.get(i));
-            }else {
-                System.out.print(worden.get(i)+ "-");
+            } else {
+                System.out.print(worden.get(i) + "-");
             }
         }
-
-
-//        for (String word : worden) {
-//            String zin = word + "-";
-//            if ()
-//
-//            System.out.print(zin);
-//        }
     }
 }

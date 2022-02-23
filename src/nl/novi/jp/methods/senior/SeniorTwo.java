@@ -25,12 +25,13 @@ public class SeniorTwo {
         englishDutchWords.put("cup","beker");
         englishDutchWords.put("screen","scherm");
 
-        translate(englishDutchWords, "cup");
+        System.out.println(translate(englishDutchWords, "cup"));
+
     }
 
     public static String translate(Map<String, String> words, String word) {
 
-        return "";
+        return words.getOrDefault(word, "engels woord is niet bekent");
     }
 
 }
