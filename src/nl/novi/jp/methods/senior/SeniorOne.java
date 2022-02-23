@@ -32,20 +32,19 @@ public class SeniorOne {
         curstomerNames.add("mo el-mecky");
         curstomerNames.add("fredje kadetje");
 
-        naarHoofdleters(curstomerNames);
+        List<String> curstomerNamesSpeltCorrectly = new ArrayList<>();
 
-    }
+        for (int i = 0; i < curstomerNames.size(); i++) {
 
-    public static List<String> naarHoofdleters (List<String> naam){
-        for (int i = 0; i < naam.size(); i++) {
-
-            ArrayList<String> splitName = new ArrayList<>(List.of(naam.get(i).split(" ")));
-
-            int grote = splitName.size();
+            ArrayList<String> splitName = new ArrayList<>(List.of(curstomerNames.get(i).split(" ")));
 
             String eersteWoord = "";
             String tweedeWoord = "";
             String derdeWoord = "";
+
+            int grote = splitName.size();
+
+            String maakString = "";
 
             if (grote == 2) {
                 eersteWoord = voorNaam(splitName);
@@ -61,11 +60,10 @@ public class SeniorOne {
                 derdeWoord = achterNaamMetTussenVoegsel(splitName);
             }
 
-            System.out.println(eersteWoord + " " + tweedeWoord + " " + derdeWoord);
+            maakString = eersteWoord + " " + tweedeWoord + " " + derdeWoord;
+            curstomerNamesSpeltCorrectly.add(maakString);
         }
-
-
-        return ;
+        System.out.println(curstomerNamesSpeltCorrectly);
     }
 
     public static String voorNaam(ArrayList<String> naam) {
@@ -88,3 +86,4 @@ public class SeniorOne {
         return s;
     }
 }
+
